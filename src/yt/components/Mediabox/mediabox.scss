@@ -1,0 +1,36 @@
+/* mediabox */
+
+@import '../../scss/utils.scss';
+
+.b-mediabox {
+    width: 100%;
+    background: $color-placeholder;
+}
+
+.mediabox-inner {
+    position: relative;
+    width: 100%;
+
+    &:before {
+        content: "";
+        display: block;
+        padding-top: 75%;
+    }
+}
+
+.mediabox-img, .mediabox-media {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+
+    &.is-sh-round {
+        border-radius: 50%;
+    }
+}
+
+

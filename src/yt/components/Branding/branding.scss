@@ -1,0 +1,24 @@
+@import '../../scss/utils.scss';
+
+.b-branding {
+    position: relative;
+}
+
+.branding-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.branding-logo {
+    width: rb-rem-calc(50px);
+    height: rb-rem-calc(50px);
+}
+
+.branding-title {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}

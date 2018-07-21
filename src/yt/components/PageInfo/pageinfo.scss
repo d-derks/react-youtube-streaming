@@ -1,0 +1,15 @@
+@import '../../scss/utils.scss';
+
+.b-pageinfo {
+    width: 100%;
+}
+
+.pageinfo-inner {
+    padding: rb-rem-calc(50px);
+}
+
+.pageinfo-text {
+    @include rb-fluid-type-range(font-size, 12px, 16px, 300px, 2000px);
+    font-weight: 300;
+    color: $color-cloudy
+}

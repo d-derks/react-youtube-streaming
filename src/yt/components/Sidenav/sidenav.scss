@@ -1,0 +1,48 @@
+@import '../../scss/utils.scss';
+
+.b-sidenav {
+    display: inline-block;
+    align-self: center;
+    margin-left: auto;
+
+    @include rb-respond-to((to:s)) {
+        display: none;
+    }
+}
+
+.sidenav-list {
+    display: flex;
+}
+
+.sidenav-item {
+    @include rb-fluid-type-range(font-size, 10px, 16px, 300px, 2000px);
+    position: relative;
+    margin-left: rb-rem-calc(30px);
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+
+    &:nth-child(1) {
+
+        & .sidenav-item-inner {
+            color: $color-euphoric;
+
+            &:hover, &:focus {
+                color: $color-tranquil;
+            }
+        }
+    }
+}
+
+.sidenav-item-inner {
+    display: block;
+    text-decoration: none;
+    color: $color-cloudy;
+    transition: 300ms ease-out color;
+    cursor: pointer;
+
+    &:hover, &:focus {
+        color: $color-tranquil;
+    }
+}

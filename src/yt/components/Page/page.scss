@@ -1,0 +1,118 @@
+@import '../../scss/utils.scss';
+
+.b-page {
+    width: 100%;
+    background: $color-seductive;
+}
+
+.page-wrapper {
+    width: 100%;
+    opacity: 1;
+    transition: opacity .3s ease-out;
+
+    &.is-vanished {
+        opacity: 0;
+    }
+}
+
+.page-header {
+    position: relative;
+    width: 100%;
+    background: $color-seductive;
+}
+
+.page-header-inner {
+    padding: rb-rem-calc(25px 50px);
+    margin: auto;
+    width: 100%;
+    max-width: rb-rem-calc(1600px);
+
+    @include rb-respond-to((to:s)) {
+        padding: rb-rem-calc(15px);
+    }
+}
+
+.page-header-section {
+    position: relative;
+    padding-bottom: rb-rem-calc(25px);
+
+    &.is-flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include rb-respond-to((to:xs)) {
+        padding-bottom: 0;
+    }
+
+}
+
+.page-main {
+    width: 100%;
+    overflow-x: hidden;
+
+    &.is-offcanvas-open {
+        transition: transform 350ms ease-out;
+        transform: translate3d(250px, 85px,40px);
+    }
+}
+
+.page-section {
+    position: relative;
+
+    &.is-bg-enchanted {
+        background: $color-seductive;
+    }
+
+    &.is-bg-euphoric {
+        background: $color-tranquil;
+    }
+
+    &.is-centered {
+        display: flex;
+    }
+}
+
+.page-section-inner {
+    width: 100%;
+    max-width: rb-rem-calc(1400px);
+    margin: 0 auto;
+    padding: rb-rem-calc(50px 25px);
+
+    &.is-padded-bottom {
+        padding-bottom: rb-rem-calc(100px);
+    }
+
+    &.is-width-medium {
+        max-width: rb-rem-calc(900px);
+    }
+
+    &.is-expanded {
+        height: 100vh;
+    }
+
+    &.is-special {
+        padding-bottom: rb-rem-calc(100px);
+
+        @include rb-respond-to((to:s)) {
+            padding: rb-rem-calc(0 25px 25px);
+        }
+    }
+
+    @include rb-respond-to((from:xl)) {
+        padding: rb-rem-calc(100px 25px);
+
+        &.is-width-medium {
+            max-width: rb-rem-calc(1100px);
+        }
+    }
+}
+
+.page-footer {
+    min-height: rb-rem-calc(100px);
+    background: $color-seductive;
+}
+
+.page-footer-inner {
+    border-top: solid 1px $color-ravish;
+}

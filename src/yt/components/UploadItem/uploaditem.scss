@@ -1,0 +1,64 @@
+@import '../../scss/utils.scss';
+
+.b-uploaditem {
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.uploaditem-inner {
+    display: block;
+    padding: 25px 0;
+    max-width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.uploaditem-media {
+    width: 100%;
+    padding: rb-rem-calc(0 25px);
+}
+
+.uploaditem-media-inner {
+    position: relative;
+    margin-bottom: rb-rem-calc(35px);
+
+    width: 100%;
+
+    &::after {
+        content: "";
+        display: block;
+        padding-top: 75%;
+    }
+}
+
+.uploaditem-img {
+    position:  absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    width: 100%;
+}
+
+.uploaditem-textbox {
+    padding: rb-rem-calc(0 25px);
+}
+
+.uploaditem-header {
+    @include rb-fluid-type-range (font-size, 16px, 28px, 320px, 2000px);
+    margin-bottom: rb-rem-calc(25px);
+    font-family: $font-sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    color: $color-ravish;
+}
+
+.uploaditem-copytext {
+    @include fluid-copytext;
+    margin-bottom: rb-rem-calc(5px);
+    word-wrap: break-word;
+    color: $color-ravish;
+}

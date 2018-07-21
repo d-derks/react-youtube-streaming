@@ -1,0 +1,39 @@
+@import '../../scss/utils.scss';
+
+.b-subheader {
+    margin-bottom: rb-rem-calc(40px);
+    padding: rb-rem-calc(10px);
+    text-align: center;
+
+    @include rb-respond-to((from:xl)) {
+        margin-bottom: rb-rem-calc(60px);
+    }
+}
+
+.subheader-title {
+    @include rb-fluid-type-range(font-size, 28px, 50px, 300px, 2000px);
+    margin-bottom: rb-rem-calc(5px);
+    font-family: $font-sans-serif;
+    font-weight: 400;
+    color: $color-ravish;
+
+    &.is-bright {
+        color: $color-dreamy;
+    }
+
+    @include rb-respond-to((from:xl)) {
+        margin-bottom: rb-rem-calc(15px);
+    }
+}
+
+.subheader-leadin {
+    @include rb-fluid-type-range(font-size, 14px, 28px, 300px, 2000px);
+    margin-bottom: rb-rem-calc(10px);
+    font-weight: 300;
+    color: $color-trust;
+
+    &.is-bright {
+        color: $color-cloudy;
+    }
+
+}

@@ -1,0 +1,109 @@
+@import '../../scss/utils.scss';
+
+/* columns
+**************/
+
+.columngroup {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 -15px;
+}
+
+.column-1 {
+    display: flex; // equal heights
+    width:8.333%;
+}
+
+.column-2 {
+    display: flex; // equal heights
+    width:16.667%;
+}
+.column-3 {
+    display: flex; // equal heights
+    flex-wrap: wrap;
+    width:25%;
+    min-width: 250px;
+
+    @include rb-respond-to((to:m)) {
+        width: 50%;
+    }
+
+    @include rb-respond-to((to:xs)) {
+        width: 100%;
+    }
+}
+
+.column-4 {
+    display: flex; // equal heights
+    width:33.333%;
+
+    @include rb-respond-to((to:m)) {
+        width: 50%;
+    }
+
+    @include rb-respond-to((to:xs)) {
+        width: 100%;
+    }
+}
+
+.column-5 {
+    display: flex; // equal heights
+    width:41.667%;
+
+    @include rb-respond-to((to:m)) {
+        width: 50%;
+    }
+
+    @include rb-respond-to((to:s)) {
+        width: 100%;
+    }
+}
+
+.column-6 {
+    display: flex; // equal heights
+    width: 50%;
+
+    @include rb-respond-to((to:s)) {
+        width: 100%;
+    }
+}
+
+.column-7 {
+    display: flex; // equal heights
+    width:58.333%;
+}
+
+.column-8 {
+    display: flex; // equal heights
+    width: 66.666%;
+}
+
+.column-9 {
+    width: 75%;
+}
+
+.column-10 {
+    display: flex; // equal heights
+    width: 83.333%;
+}
+
+.column-11 {
+    display: flex; // equal heights
+    width: 91.667%;
+}
+
+.column-12 {
+    display: flex; // equal heights
+    width: 100%;
+}
+
+// gutters
+
+.is-gutter {
+    padding: rb-rem-calc(15px);
+}
+
+.is-gutter-outer {
+    padding: rb-rem-calc(0 30px);
+}

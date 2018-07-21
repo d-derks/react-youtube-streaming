@@ -1,0 +1,43 @@
+@import '../../scss/utils.scss';
+
+.b-uploaditemspecial {
+    display: flex;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+
+    &:nth-child(2) {
+        margin-top: rb-rem-calc(30px);
+    }
+}
+
+.uploaditemspecial-inner {
+    position: relative;
+    display: block;
+    margin: auto;
+    padding: 25px 0;
+    max-width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.uploaditemspecial-section {
+    padding: rb-rem-calc(0 25px);
+}
+
+.uploaditemspecial-header {
+    @include rb-fluid-type-range (font-size, 16px, 28px, 320px, 2000px);
+    margin-bottom: rb-rem-calc(25px);
+    font-family: $font-sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    color: $color-ravish;
+}
+
+.uploaditemspecial-copytext {
+    @include fluid-copytext;
+    margin-bottom: rb-rem-calc(25px);
+    word-wrap: break-word;
+    color: $color-ravish;
+}
