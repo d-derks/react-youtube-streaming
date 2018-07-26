@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 import store from './store';
 import Yt from './yt';
 
-// import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './registerServiceWorker';
 
 const siteConfig = {
     apiKey: 'AIzaSyAfXsr0dXymQau2roaJOs_CtgwGf_IT_aM',
@@ -40,4 +40,5 @@ ReactDOM.render((
         />
     </Provider>
 ), document.getElementById('root'));
-// registerServiceWorker();
+
+registerServiceWorker();

@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import Proptypes from 'prop-types';
 import PlayListProvider from '../../provider/PlaylistProvider';
-import Uploads, { UploadPlaceholder } from '../Uploads';
+import Uploads from '../Uploads';
 import Subheader from '../Subheader';
+import ItemPlaceholder from '../ItemPlaceholder';
 
 export default function UploadsSection(props){
 
@@ -22,10 +23,10 @@ export default function UploadsSection(props){
                         />
                     ) : (
                         <Fragment>
-                            <UploadPlaceholder />
-                            <UploadPlaceholder />
-                            <UploadPlaceholder />
-                            <UploadPlaceholder />
+                            <ItemPlaceholder />
+                            <ItemPlaceholder />
+                            <ItemPlaceholder />
+                            <ItemPlaceholder />
                         </Fragment>
                     )
                 }

@@ -44,7 +44,7 @@ export default class DefaultTemplate extends React.Component{
 
         return (
             <ProviderCase>
-                <div className="b-page">
+                <div className="l-page">
                     {
                         viewportSmall ?
                             <NavOverlay

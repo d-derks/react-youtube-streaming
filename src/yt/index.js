@@ -72,7 +72,9 @@ export default connect(null, mapDispatch)(class YTNavigator extends React.Compon
     render(){
         /* eslint-disable react/jsx-no-bind */
         return (
-            <BrowserRouter>
+            <BrowserRouter
+                basename={process.env.PUBLIC_URL}
+            >
                 <ScrollTop {...this.props}>
 
                         <Route

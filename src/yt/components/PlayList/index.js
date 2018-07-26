@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import Item from '../Item';
+import ItemPlaceholder from '../ItemPlaceholder';
 
 export default function PlayList(props) {
 
-    const { playlist, totalItems = 8 } = props;
+    const { playlist, totalItems = 8, contentPlaceholder } = props;
 
     return(
         playlist && playlist.items ?
@@ -21,9 +22,16 @@ export default function PlayList(props) {
                     </div>
                 )
             ) :
-            (
-               null
-            )
+            contentPlaceholder ?
+                (
+                    <Fragment>
+                        <ItemPlaceholder />
+                        <ItemPlaceholder />
+                        <ItemPlaceholder />
+                        <ItemPlaceholder />
+                    </Fragment>
+                ) :
+                null
     );
 }
 

@@ -19,6 +19,7 @@ export default function PlaylistPage(props){
                             playlistId={playlistId}
                             visual={PlayList}
                             totalItems={8}
+                            contentPlaceholder={true}
                         />
                     </div>
                 </div>
