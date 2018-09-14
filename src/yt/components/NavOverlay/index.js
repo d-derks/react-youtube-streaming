@@ -20,7 +20,9 @@ export default function NavOverlay(props) {
                 );
 
                 return(
-                    <div className={ navoverlayClass }
+                    <div
+                        className={ navoverlayClass }
+                        onClick={ context.handleClick }
                     >
                         <div className="navoverlay-inner">
                             <nav className="navoverlay-nav">

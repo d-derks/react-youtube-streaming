@@ -10,7 +10,7 @@ export default function UploadsSectionSpecial(props){
 
     return (
         <div className="page-section is-bg-enchanted">
-            <div className="page-section-inner is-padded">
+            <div className="page-section-inner">
                 <Subheader
                     isClasses='is-bright'
                 />

@@ -2,14 +2,14 @@
 
 @mixin fluid-copytext($font-familiy: $font-sans-serif) {
 
-    font: 400 rb-rem-calc(18px)/1.6 $font-familiy;
+    font: 400 rb-rem-calc(18px)/1.4 $font-familiy;
 
     @include rb-respond-to(xs) {
         font-size: rb-rem-calc(14px);
     }
 
     @include rb-respond-to((from:s,to:l)) {
-        @include rb-fluid-type-range(font-size, 14px, 18px, 600px, 1440px);
+        @include rb-fluid-type-range(font-size, 16px, 18px, 600px, 1440px);
     }
 
     @include rb-respond-to(xl) {

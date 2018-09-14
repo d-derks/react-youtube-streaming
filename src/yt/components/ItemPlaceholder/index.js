@@ -3,9 +3,9 @@ import React from 'react';
 export default function ItemPlaceholder() {
     return (
         <div className="column-3 is-gutter">
-            <svg className="item-placeholder" viewBox="0 0 317 598">
-                <path fill="#FFF" d="M303 570c0 6.627-5.373 12-12 12H32c-6.627 0-12-5.373-12-12V26c0-6.627 5.373-12 12-12h259c6.627 0 12 5.373 12 12v544z"/>
-                <path className="item-placeholder-item" fill="#4C5660" d="M47 64h232v171H47zM47 326h192v23H47zM47 291h229v23H47zM48 401h191v12H48zM47 373h229v12H47zM48 429h229v12H48zM48 455h191v12H48zM47 480h229v12H47z"/>
+            <svg className='item-placeholder' viewBox="0 0 97.036 192">
+                <path fill="#FFF" d="M95.036 187.649c0 1.666-1.314 2.351-2.937 2.351H4.973c-1.622 0-2.937-.685-2.937-2.351V4.684C2.036 3.018 3.351 2 4.973 2H92.1c1.622 0 2.937 1.018 2.937 2.684v182.965z"/>
+                <path fill="#C2C3C4" d="M10.036 11h76v57h-76zM11.036 87h74v6h-74zM11.036 97h44v6h-44zM11.036 107h67v6h-67zM10.036 128h74v6h-74zM10.036 138h74v6h-74zM10.036 148h74v6h-74zM10.036 158h74v6h-74z"/>
             </svg>
         </div>
         );

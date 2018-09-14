@@ -11,9 +11,9 @@ export default function UploadsSection(props){
 
     return (
         <div className="page-section is-bg-euphoric">
-            <div className="page-section-inner is-padded">
+            <div className="page-section-inner">
                 <Subheader />
-                <div className="columngroup is-gutter-outer">
+                <div className="columngroup">
                 {
                     playlistId ? (
                         <PlayListProvider

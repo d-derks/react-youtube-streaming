@@ -29,8 +29,12 @@
 }
 
 .item-header {
+    @include rb-fluid-type-range (font-size, 16px, 26px, 320px, 2000px);
     position: relative;
     margin-bottom: rb-rem-calc(35px);
+    font-family: $font-sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
     color: $color-ravish;
 
     &:after {
@@ -39,7 +43,7 @@
         bottom: rb-rem-calc(-15px);
         left: 0;
         width: rb-rem-calc(30px);
-        height: rb-rem-calc(5px);
+        height: rb-rem-calc(4px);
         background: $color-ravish;
 
     }

@@ -27,7 +27,7 @@ export default function PlayerPage(props){
             </div>
             <div className="page-section is-bg-euphoric">
                 <div className="page-section-inner is-padded-bottom">
-                    <div className="columngroup is-gutter-outer">
+                    <div className="columngroup">
                         <PlayListProvider
                             playlistId={playlistId}
                             visual={PlayList}

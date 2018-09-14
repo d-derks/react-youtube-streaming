@@ -14,19 +14,20 @@
 
 .intro-textbox {
     position: relative;
-    padding: rb-rem-calc(25px);
+    padding-right: rb-rem-calc(30px);
     width: 50%;
     fill: $color-placeholder;
 
     @include rb-respond-to((to:s)) {
+        padding-right: 0;
         width: 100%;
     }
 }
 
 .intro-textbox-header {
-    @include rb-fluid-type-range(font-size, 36px, 72px, 300px, 2000px);
+    @include rb-fluid-type-range(font-size, 32px, 68px, 300px, 2000px);
     position: relative;
-    margin-bottom: rb-rem-calc(50px);
+    margin: rb-rem-calc(5px 0 50px);
     font-family: $font-sans-serif;
     font-weight: 500;
     line-height: 1.15;
@@ -38,7 +39,7 @@
         bottom: rb-rem-calc(-15px);
         left: 0;
         width: rb-rem-calc(60px);
-        height: rb-rem-calc(7px);
+        height: rb-rem-calc(5px);
         background: $color-euphoric;
     }
 }
@@ -56,6 +57,10 @@
     order: 2;
     width: 50%;
     padding: 0 25px;
+
+    @include rb-respond-to((from:l)) {
+        padding: 0;
+    }
 
     @include rb-respond-to((to:s)) {
         display: none;

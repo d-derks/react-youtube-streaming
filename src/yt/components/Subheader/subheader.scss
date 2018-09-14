@@ -1,9 +1,12 @@
 @import '../../scss/utils.scss';
 
 .b-subheader {
-    margin-bottom: rb-rem-calc(40px);
-    padding: rb-rem-calc(10px);
+    margin-bottom: rb-rem-calc(30px);
     text-align: center;
+
+    @include rb-respond-to((to:s)) {
+        margin-bottom: rb-rem-calc(15px);
+    }
 
     @include rb-respond-to((from:xl)) {
         margin-bottom: rb-rem-calc(60px);
@@ -11,8 +14,8 @@
 }
 
 .subheader-title {
-    @include rb-fluid-type-range(font-size, 28px, 50px, 300px, 2000px);
-    margin-bottom: rb-rem-calc(5px);
+    @include rb-fluid-type-range(font-size, 22px, 50px, 300px, 2000px);
+    margin-bottom: rb-rem-calc(10px);
     font-family: $font-sans-serif;
     font-weight: 400;
     color: $color-ravish;

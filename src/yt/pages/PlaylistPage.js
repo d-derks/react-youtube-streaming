@@ -12,9 +12,9 @@ export default function PlaylistPage(props){
     return (
         <DefaultTemplate {...props}>
             <div className="page-section is-bg-euphoric">
-                <div className="page-section-inner is-padded">
+                <div className="page-section-inner">
                     <Subheader/>
-                    <div className="columngroup is-gutter-outer">
+                    <div className="columngroup">
                         <PlayListProvider
                             playlistId={playlistId}
                             visual={PlayList}
